@@ -1,0 +1,115 @@
+
+
+<html>
+<head>
+  <link rel="stylesheet" href="exc1.css">
+  
+</head>
+<body>
+
+
+<script>
+
+function allowDrop(ev){ev.preventDefault();}
+function drag(ev){ev.dataTransfer.setData("text",ev.target.id);}
+function drop(ev)
+{
+ev.preventDefault();
+var data= ev.dataTransfer.getData("text");
+ev.target.appendChild(document.getElementById(data))
+}
+
+</script>
+
+
+<div class="container" style="width: 100%;border: 1px solid black;">
+
+<p style="margin:5">
+File
+</p>
+<p style="margin:5">
+Edit
+</p>
+<p style="margin:5">
+View
+</p>
+<p style="margin:5">
+Help
+</p>
+
+</div>
+</br>
+
+<div class="container" style="height:75%;">
+
+	<div class="borderedcontainer" style="width:12.5%; float=left">
+	<div>
+	<ul style="margin:20;margin-left:-15;list-style-type:None">
+	<li>Item1</li>
+	<li>Item2</li>
+	<li>Item3</li>
+	<li>Item4</li>
+	</ul>
+	</div>
+	</div>
+	
+	<div class="container" style="width:87.5%;height:100%;margin-left:10;flex-direction: column;">
+		</br>
+		<div class="borderedcontainer" style="width:100%;height:25%;float:right">
+		<div style="width: 100%;
+  height: 100%;
+  background-color: red;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;"></div>
+		</div>
+		<div class="container" style="margin:auto;width:100%;height:25%;float:up;flex-direction: row">
+		<p style="margin-right:20">You are free to assign values to unspecified measurements as long as your page follows thelayout specified in the above figure. The page does not have to be viewable in one screen, i.e.,it is acceptable for the page to be scrollable.o You are free to choose any photo to be dragged from the “Photo to Drag” box. The photo canbe only dropped on the “Drag&Drop” areas. The photo can then be dragged and droppedbetween the two areas back and forth. For this, you need to use JavaScript as discussed in theslides.o You are free to choose any photo
+		</p>
+		<p style="margin-left:20">You are free to assign values to unspecified measurements as long as your page follows thelayout specified in the above figure. The page does not have to be viewable in one screen, i.e.,it is acceptable for the page to be scrollable.o You are free to choose any photo to be dragged from the “Photo to Drag” box. The photo canbe only dropped on the “Drag&Drop” areas. The photo can then be dragged and droppedbetween the two areas back and forth. For this, you need to use JavaScript as discussed in theslides.o You are free to choose any photo
+		</p>
+		</div>
+		
+		<div class="borderedcontainer" style="margin:auto;padding: 70px 0;width:70%;height:5%">
+		<img src="index.jpeg" style="width: 100%; height:524%;top: -70px;position: relative;" alt="Italian Trulli">
+		</div>
+		<div class="container" style="margin:auto;width:50%;height:25%;float:up;flex-direction: row">
+		<p style="text-align: center">You are free to assign values to unspecified measurements as long as your page follows thelayout specified in the above figure. The page does not have to be viewable in one screen, i.e.,it is acceptable for the page to be scrollable.o You are free to choose any photo to be dragged from the “Photo to Drag” box. The photo canbe only dropped on the “Drag&Drop” areas. The photo can then be dragged and droppedbetween the two areas back and forth. For this, you need to use JavaScript as discussed in theslides.o You are free to choose any photo
+		</p>
+		</div>
+		
+	</div>
+	
+
+
+</div>
+
+
+
+
+<div class="container" style="height:20%"><!--;border: 1px solid black;">-->
+
+<div id="div1" class="borderedcontainer" style="margin:auto;width:20%;height:85%" ondrop="drop(event)" ondragover="allowDrop(event)">
+		</div>
+
+<div id="div2" class="borderedcontainer" style="margin:auto;width:20%;height:85%" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+<img id="drag1" src="index.jpeg" draggable="true" style="width: 100%; height:100%;" 
+alt="Italian Trulli"
+ondragstart="drag(event)">
+		
+		</div>
+
+<div id="div3" class="borderedcontainer" style="margin:auto;width:20%;height:85%" ondrop="drop(event)" ondragover="allowDrop(event)">
+		</div>		
+</div>
+
+
+
+
+
+
+</body>
+</html>

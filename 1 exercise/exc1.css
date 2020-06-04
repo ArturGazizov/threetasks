@@ -1,0 +1,28 @@
+.container {
+  display: flex; /* or inline-flex */
+  //border: 1px solid black;
+}
+
+.borderedcontainer {
+  //display: flex; /* or inline-flex */
+  border: 1px solid black;
+}
+
+.padded {
+  display: flex; /* or inline-flex */
+  border: 20px solid white;
+  width: 100%;
+  height: 100%;
+}
+
+
+@-webkit-keyframes example {
+  from {background-color: grey;}
+  to {background-color: black;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {background-color: grey;}
+  to {background-color: black;}
+}

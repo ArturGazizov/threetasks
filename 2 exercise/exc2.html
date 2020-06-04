@@ -1,0 +1,76 @@
+
+<meta charset="UTF-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<html>
+<head>
+  <link rel="stylesheet" href="exc2.css">
+  
+  
+  
+
+
+<!--<script src="JsBarcode.all.min"></script>Loading failed for the <script> with source “file:///C:/Users/artgaz/Desktop/Uusi%20kansio/2%20exercise/JsBarcode.all.min.js”.-->
+<!--<script src="JsBarcode.all.min.js"></script>Loading failed for the <script> with source “file:///C:/Users/artgaz/Desktop/Uusi%20kansio/2%20exercise/JsBarcode.all.min.js”.-->
+<script type="text/javascript" src="exc2.js"></script>
+
+</head>
+<body>
+
+
+<div class="borderedcontainer" style="height:99%;width:99%;">
+	<div class="borderedcontainer" style="height:25;width:100%;background-color:#DADADA;border:0;border-bottom: 1px solid black;">
+	Window title
+	<img src="close.jpg" alt="Close" class="menubutton"/>
+	<img src="maximize.jpg" alt="Maximize" class="menubutton"/>
+	<img src="minimize.jpg" alt="Minimize" class="menubutton"/>
+	</div>
+
+	<div class="it">
+		<form id="submitting" onsubmit="callback(event)">
+		<table>
+		
+		<tr><td>Virtual bar code:</td><td><input name="barcodeee" id="barcodee" onkeydown="changecolor(event)" style="width:220"></td></tr>
+		<tr><td></td><td><input type=submit value="Decode"><!--<div class="borderedcontainer" style="height:20;width:100;background-color:#C9C9C9;text-align:center;">Decode</div>--></td>
+		</table>
+		</form>
+		
+		<div style="position: relative;top:-20;">
+		<div class="borderedcontainer" style="height:20;width:100;background-color:#C9C9C9;text-align:center;float:right;position: relative;left:-10;" id="hider" onclick="toggle()">Hide</div>
+		</br>
+			<div class="borderedcontainer2" id="info"><!--information section-->
+		
+				<table>
+				
+				<tr><td style="width:50%">Payee's IBAN:<span id="IBAN"></span></td><td></td><td style="width:50%">Amount to be paid:<span id="amount"></span></td><td></td></tr>
+				<tr><td>&nbsp</td><td></td><td></td><td></td></tr>
+				<tr><td>Payment reference:<span id="referencenumber"></span></td><td></td><td style="float:left">Due date:<span id="duedate"></span></div></td><td style="float:right"></td>
+				</table>
+				
+				<div id="barcode" class="borderedcontainer"  style="position: absolute;top: 50%;left: 25%;height:90;width:540;background-color:#C9C9C9;text-align:center;">
+				BAR CODE HERE
+				</div>
+<div style="position: absolute; top:290">		
+Version 4:
+Account No. Sp. 79 4405 2020 0360 82 Total: 4,883.15 Reference number: 86851 62596 19897 Due Date: 12.06.2010 Virtual code: 479440520200360820048831500000000868516259619897100612
+Account No. Sampo 16 8000 1400 0502 67 Total: 935.85 Reference number: 78 77767 96566 28687 Due Date: None Virtual code: 416800014000502670009358500000078777679656628687000000
+Version 5:
+Account No. Op. 02 5000 4640 0013 02 Total: 693,80 Reference number: RF02 6987 5672 0834 Due Date: 24.7.2011 Virtual code: 502500046400013020006938002000000000698756720834110724
+Account No. Handelsbanken 73 3131 3001 0000 58 Total: 0,00 Reference number: RF10 8686 24 Due Date: 9.8.2013 Virtual code: 573313130010000580000000010000000000000000868624130809
+</div>
+
+			</div>
+
+
+
+		</div>
+		
+
+
+	</div>
+</div>
+
+
+</body>
+</html>
+
